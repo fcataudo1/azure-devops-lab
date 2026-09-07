@@ -1,0 +1,7 @@
+# Verifica autonoma dell'ambiente
+
+La distribuzione utilizzata è Ubuntu-24.04 in esecuzione su WSL 2, come verificato dal comando `wsl --list --verbose`, che ha mostrato il valore `2` nella colonna `VERSION`. Il repository personale è ospitato nel filesystem Linux e il comando `pwd` ha restituito `/home/fpc003/workspace/azure-devops-lab`; `git rev-parse --show-toplevel` ha restituito lo stesso percorso, confermando la radice del repository. Il remote `origin` è configurato sull'URL pubblico `https://github.com/fcataudo1/azure-devops-lab.git`, senza token o parametri riservati.
+
+Nel workflow Git, il working tree contiene le modifiche presenti nella cartella di lavoro, la staging area contiene i file selezionati con `git add`, il commit locale registra una versione nella cronologia del repository e il repository remoto GitHub conserva e pubblica i commit inviati con `git push`. L'installazione di Azure CLI è stata verificata con il comando `az version`, che ha confermato la versione 2.90.0. L'invito al docente sul repository GitHub risulta accettato.
+
+Un possibile errore di contesto consiste nell'eseguire i comandi Git fuori dalla cartella del repository o nel lavorare nel filesystem Windows invece che in quello Linux. Il comando `git rev-parse --show-toplevel` permette di riconoscere la radice effettiva del repository e, insieme a `pwd`, di verificare il corretto contesto di lavoro.
