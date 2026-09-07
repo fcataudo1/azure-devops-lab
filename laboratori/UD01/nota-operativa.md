@@ -9,3 +9,4 @@ pwd
 ```
 
 L'output indicava un percorso interno alla home Linux e non un percorso `/mnt/c`.
+Il comando `pwd` è stato particolarmente utile perché permette di verificare rapidamente la posizione corrente e confermare che si sta lavorando nel filesystem Linux di WSL.
