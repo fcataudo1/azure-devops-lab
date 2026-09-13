@@ -96,6 +96,6 @@ La diagnosi del conflitto è stata quindi effettuata sulla configurazione NSG. N
 - **Regola prevista mantenuta:** `Allow-Web-Postgres`, priorità `300`.
 - **Resource group:** eliminato al termine del laboratorio e della verifica finale UD05.
 - **Cleanup completo:** eseguito con eliminazione del resource group e verifica della sua rimozione.
-- **Commit:** da completare dopo la verifica finale del repository.
+- **Hash abbreviato e messaggio del commit:** `8c80438` — `Completa laboratorio UD05`.
 
 Il laboratorio ha dimostrato come una regola NSG con priorità più alta possa rendere inefficace una regola Allow successiva e come distinguere una diagnosi configurativa da una verifica reale del traffico.
